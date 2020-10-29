@@ -1,4 +1,4 @@
-function create(height, width) {
+export function create(height, width) {
     let canvas = document.createElement("canvas");
     canvas.height = height;
     canvas.width = width;
@@ -11,6 +11,3 @@ function create(height, width) {
     img.src = "img/magic8ball_start.png";
     ctx.drawImage(img, 10, 10);
 }
-
-
-export { create };
